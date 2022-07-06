@@ -1,0 +1,248 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+body {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 1.8rem;
+  line-height: 1.4;
+  color: azure;
+}
+:root {
+  --main-color: brown;
+  --hover-color: #f3c7c7;
+  --font-color: azure;
+}
+#navbar {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  background-color: var(--main-color);
+}
+h2#brand-name {
+  width: 150px;
+  padding: 2px 20px;
+  font-size: 1.6rem;
+  text-align: center;
+}
+h2#brand-name span {
+  color: var(--hover-color);
+}
+#nav-links {
+  width: 100px;
+  height: 25px;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  right: 0;
+}
+#nav-links:hover {
+  height: auto;
+}
+.nav-link {
+  display: block;
+  padding: 2px 0;
+  font-size: 1.6rem;
+  text-decoration: none;
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 2px;
+  color: var(--font-color);
+  background-color: var(--main-color);
+}
+.nav-link span {
+  display: none;
+}
+.nav-link:hover {
+  background-color: var(--hover-color);
+  color: var(--main-color);
+}
+#welcome-section {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #355a69;
+  background: linear-gradient(50deg, #355a69, #032431);
+}
+
+h1,
+h2,
+h3,
+p {
+  text-align: center;
+}
+h1 {
+  font-family: Rubik, sans-serif;
+  font-size: 2.5rem;
+}
+h1 span {
+  color: #f0abab;
+  border-bottom: 3px solid #f0abab;
+}
+p {
+  font-size: 1.4rem;
+  font-weight: 200;
+  margin: 20px auto;
+}
+
+#projects {
+  padding: 10rem 0;
+  display: flex;
+  flex-direction: column;
+  background-color: #3c6382;
+}
+
+#projects h2 {
+  padding: 15px 0 10px;
+}
+hr {
+  width: 25%;
+  margin: auto auto 7rem;
+  border: 2px solid rgb(240, 255, 255, 0.5);
+}
+#wrapper {
+  width: 95%;
+  margin: auto;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+
+.card {
+  max-width: 35rem;
+  min-width: 20rem;
+  width: 100%;
+  margin: 10px;
+  border-radius: 6px;
+  border: 1px solid azure;
+  text-decoration: none;
+}
+.card:hover span {
+  color: orangered;
+}
+
+img {
+  width: 90%;
+  display: block;
+  margin: 20px auto;
+  border-radius: 3px;
+  border: 1px solid azure;
+}
+.card p {
+  font-weight: 400;
+  margin-bottom: 20px;
+  color: azure;
+}
+#profiles {
+  height: 45vmin;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.icons {
+  max-width: 25vmin;
+  min-width: 20vmin;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.icons > a {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: azure;
+  text-decoration: none;
+  transition: 0.5s ease-in-out;
+}
+.icons a:hover {
+  transform: translateY(15px);
+}
+.icons a span {
+  margin-left: 10px;
+}
+
+footer {
+  padding: 25px;
+  border-top: 2px solid #f0ffff3b;
+}
+.footer {
+  background-color: #355a69;
+  background: linear-gradient(50deg, #355a69, #032431);
+}
+@media only screen and (min-width: 576px) {
+  h1 {
+    font-size: 3.5rem;
+  }
+  p {
+    font-size: 2rem;
+  }
+  #projects h2 {
+    font-size: 3.5rem;
+  }
+}
+@media (min-width: 768px) {
+  h1 {
+    font-size: 4rem;
+  }
+  p {
+    font-size: 1.8rem;
+  }
+  #projects h2 {
+    font-size: 4rem;
+  }
+}
+
+@media (min-width: 992px) {
+  #navbar {
+    padding: 5px 3vw;
+    background-color: var(--main-color);
+    display: flex;
+    justify-content: space-between;
+  }
+  h2#brand-name {
+    width: auto;
+    font-size: 1.6rem;
+  }
+  #nav-links {
+    position: static;
+    height: auto;
+    width: 20%;
+    display: flex;
+    justify-content: flex-end;
+  }
+  .nav-link {
+    width: 25%;
+    margin: 0 2px;
+    display: block;
+    font-weight: bold;
+    font-size: 1.6rem;
+    text-align: center;
+    line-height: 1.8;
+    text-decoration: none;
+    color: azure;
+  }
+  h1 {
+    font-size: 5rem;
+  }
+
+  h2 {
+    font-size: 5rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  h1 {
+    font-size: 6rem;
+  }
+}
